@@ -9,6 +9,9 @@ ert = 'ARROW';
 x = window.screen.width * window.devicePixelRatio - (window.screen.width * window.devicePixelRatio/15);
 y = window.screen.height * window.devicePixelRatio / 1.15;
 
+function init(){
+	document.getElementById("sketch-holder").style.height = ''+(2 * y/3.4)+'px';
+}
 function changefontcolor(clr_r, clr_g, clr_b, clr_sw, clr_ert) {
 	cr = clr_r;
 	cg = clr_g;
@@ -66,6 +69,7 @@ function get_count(){
   }
   else if(c >= 0){
   	document.getElementById("canvasImg").style.display = "block";
+  	document.getElementById("canvasImg").style.height = ''+(y/3)+'px';
 	var e = document.getElementById('canvasImg');
 	var first = e.firstElementChild; 
 	while (first) { 
@@ -81,8 +85,7 @@ function get_count(){
   		document.getElementById('canvasImg').appendChild(img);
   		temp_count = temp_count + 1;
   	}
-  	//var dataUrl_to_save = canvas_to_save.toDataURL();// url of image
-  	//document.getElementById('canvasImg').src = dataUrl_to_save;
+  	
   }
   else{
   	alert("Something Wrong");

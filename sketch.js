@@ -60,7 +60,8 @@ function add_page_no(){
         context_to_add_page_no.clip();
 	}
 }
-function get_count(){
+//saving your ans
+function save_img_ans(){
   var c = document.getElementById("sketch-holder").childElementCount;
   c = c - 1;
   if(c < 0){
@@ -77,12 +78,17 @@ function get_count(){
 		first = e.firstElementChild; 
 	}
   	var temp_count = 0;
-  	while(c >= temp_count){
-  		var img = new Image(); 
+  	while(c >= temp_count){/*
+  		var img = new Image(); */
   		var canvas_to_append = document.getElementById("defaultCanvas"+temp_count);
-  		var dataUrl_to_append = canvas_to_append.toDataURL();// url of image
+  		var dataUrl_to_append = canvas_to_append.toDataURL();/*/ url of image
   		img.src = dataUrl_to_append;
-  		document.getElementById('canvasImg').appendChild(img);
+  		img.setAttribute('width', '100%');
+  		document.getElementById('canvasImg').appendChild(img);*/
+  		var div=document.createElement("img")
+  		div.setAttribute("src",dataUrl_to_append)
+  		div.style.width ="100%";
+  		document.getElementById('canvasImg').appendChild(div);
   		temp_count = temp_count + 1;
   	}
   	

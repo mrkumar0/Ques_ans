@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+<ul id=menu>
+ <li><button id="scroll" onclick="scroll_write('scroll')">scroll</button></li>
+ <li><button id="write" onclick="scroll_write('write')">write</button></li>
+ <li><button id="add_space" onclick="add_space()">add_space</button></li>
+</ul>
+<ul id=colormenu>	
+  <li id="red" onclick="changefontcolor('255','0','0','1','ARROW')"></li>
+  <li id="green" onclick="changefontcolor('0','255','0','1','ARROW')"></li>
+  <li id="blue" onclick="changefontcolor('0','0','255','1','ARROW')"></li>
+  <li id="white" onclick="changefontcolor('255','255','255','1','ARROW')"></li>
+  <li id="gray" onclick="changefontcolor('0','0','0','20','CROSS')"></li>
+</ul>    
+    
+    <div id="sketch-holder" style="width: 100%;"></div>
+</body></html>
+<script type="text/javascript">
+    window.onbeforeunload = function() {
+        return "Dude, are you sure you want to leave? Think of the kittens!";
+    }
+</script>

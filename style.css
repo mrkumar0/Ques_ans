@@ -1,0 +1,59 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  list-style-type: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 5.5em;
+  margin-top: -2.5em;
+  background-color: pink;
+  border-bottom-left-radius: 4em;
+  border-top-left-radius: 4em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+#colormenu{
+  list-style-type: none;
+  position: fixed;
+  left: 0;
+  padding-left: 0.5em;
+  top: 50%;
+  width: 4em;
+  margin-top: -2.5em;
+  background-color: pink;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
+}
+#red{
+	background-color: red; 
+	margin: 5px; 
+	height: 20px; 
+	width: 20px; 
+}
+#blue{
+	background-color: blue; 
+	margin: 5px; 
+	height: 20px; 
+	width: 20px; 
+}
+#green{
+	background-color: green; 
+	margin: 5px; 
+	height: 20px; 
+	width: 20px; 
+}
+#white{
+	background-color: white; 
+	margin: 5px; 
+	height: 20px; 
+	width: 20px; 
+}
+#gray{
+	background-color: gray; 
+	margin: 5px; 
+	height: 20px; 
+	width: 20px; 
+}

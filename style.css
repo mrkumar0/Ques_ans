@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: lightpink;
 }
 #menu {
   list-style-type: none;
@@ -28,30 +29,45 @@ html, body {
   border-top-right-radius: 2em;
 }
 #red{
+  position: fixed;
+  left: 0;
+  top: 10%;
 	background-color: red; 
 	margin: 5px; 
 	height: 20px; 
 	width: 20px; 
 }
 #blue{
+  position: fixed;
+  left: 0;
+  top: 20%;
 	background-color: blue; 
 	margin: 5px; 
 	height: 20px; 
 	width: 20px; 
 }
 #green{
+  position: fixed;
+  left: 0;
+  top: 30%;
 	background-color: green; 
 	margin: 5px; 
 	height: 20px; 
 	width: 20px; 
 }
 #white{
+  position: fixed;
+  left: 0;
+  top: 40%;
 	background-color: white; 
 	margin: 5px; 
 	height: 20px; 
 	width: 20px; 
 }
 #gray{
+  position: fixed;
+  left: 0;
+  top: 50%;
 	background-color: gray; 
 	margin: 5px; 
 	height: 20px; 
@@ -59,15 +75,48 @@ html, body {
 }
 #canvasImg{
   text-align: center; 
-  width: 98%; 
-  height: 200px; 
+  width: 100%;
   overflow-y: scroll; 
   overflow-x:hidden; 
   display: none;
-  margin: 1%;
+  margin-bottom: 1%;
 }
 canvas{
 }
 #sketch-holder{
+  text-align: center; 
   width: 100%;
+  overflow-y: scroll; 
+  overflow-x:hidden; 
+}
+.button_tap {
+  background-color: #4CAF50;
+  font-size: 16px;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  padding: 5px 15px 6px 1em;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  transform: rotate(-90deg);
+}
+#scroll{
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+#write{
+  position: fixed;
+  right: 0;
+  top: 25%;
+}
+#add_space{
+  position: fixed;
+  right: -1.2em;
+  top: 45%;
+}
+#save_ans{
+  position: fixed;
+  right: -0.9em;
+  top: 65%;
 }

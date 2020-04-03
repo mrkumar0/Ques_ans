@@ -7,20 +7,18 @@
     <script src="sketch.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<ul id=menu>
-	 <li><button id="scroll" onclick="scroll_write('scroll')">scroll</button></li>
-	 <li><button id="write" onclick="scroll_write('write')">write</button></li>
-	 <li><button id="add_space" onclick="add_space()">add_space</button></li>
-	 <li><button id="add_space" onclick="get_count()">Save Ans</button></li>
-	</ul>
-	<ul id=colormenu>	
-	  <li id="red" onclick="changefontcolor('255','0','0','5','ARROW')"></li>
-	  <li id="green" onclick="changefontcolor('0','255','0','5','ARROW')"></li>
-	  <li id="blue" onclick="changefontcolor('0','0','255','5','ARROW')"></li>
-	  <li id="white" onclick="changefontcolor('255','255','255','5','ARROW')"></li>
-	  <li id="gray" onclick="changefontcolor('115', '110', '110','20','CROSS')"></li>
-	</ul>    
+<body onload="init()">
+	 <button id="scroll" class="button_tap" onclick="scroll_write('scroll')">scroll</button>
+	 <button id="write" class="button_tap" onclick="scroll_write('write')">write</button>
+	 <button id="add_space" class="button_tap" onclick="add_space()">add_space</button>
+	 <button id="save_ans" class="button_tap" onclick="get_count()">Save Ans</button>
+	<div>	
+	  <M_Button id="red" class="button_tap" onclick="changefontcolor('255','0','0','5','ARROW')"></M_Button>
+	  <M_Button id="green" class="button_tap" onclick="changefontcolor('0','255','0','5','ARROW')"></M_Button>
+	  <M_Button id="blue" class="button_tap" onclick="changefontcolor('0','0','255','5','ARROW')"></M_Button>
+	  <M_Button id="white" class="button_tap" onclick="changefontcolor('255','255','255','5','ARROW')"></M_Button>
+	  <M_Button id="gray" class="button_tap" onclick="changefontcolor('115', '110', '110','20','CROSS')"></M_Button>
+	  </div>
 	<div id="canvasImg"></div>
 	<div id="sketch-holder"></div>
 </body>
